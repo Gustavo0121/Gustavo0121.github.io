@@ -4,17 +4,17 @@
  * Compõe todas as seções do portfólio com scroll reveal
  */
 import { useEffect } from "react";
-import Navbar from "@/components/Navbar";
-import HeroSection from "@/components/HeroSection";
-import StatsBar from "@/components/StatsBar";
-import AboutSection from "@/components/AboutSection";
-import ExperienceSection from "@/components/ExperienceSection";
-import StackSection from "@/components/StackSection";
-import ProjectsSection from "@/components/ProjectsSection";
-import SkillsSection from "@/components/SkillsSection";
-import ResumeSection from "@/components/ResumeSection";
-import ContactSection from "@/components/ContactSection";
-import Footer from "@/components/Footer";
+import Navbar from "../components/Navbar";
+import HeroSection from "../components/HeroSection";
+import StatsBar from "../components/StatsBar";
+import AboutSection from "../components/AboutSection";
+import ExperienceSection from "../components/ExperienceSection";
+import StackSection from "../components/StackSection";
+import ProjectsSection from "../components/ProjectsSection";
+import SkillsSection from "../components/SkillsSection";
+import ResumeSection from "../components/ResumeSection";
+import ContactSection from "../components/ContactSection";
+import Footer from "../components/Footer";
 
 export default function Home() {
   // Scroll reveal observer

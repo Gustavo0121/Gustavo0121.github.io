@@ -5,7 +5,7 @@ on:
     branches: [ "dev" ] 
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -13,23 +13,26 @@ concurrency:
   group: 'pages'
   cancel-in-progress: true
 
+env:
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: "true"
+
 jobs:
   build_deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        
+      - name: Instalar pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 10
     
       - name: Instalar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: '24'
           cache: 'pnpm'
-
-      - name: Instalar pnpm
-        uses: pnpm/action-setup@v2 # Instala a versão correta do pnpm especificada no package.json
-        with:
-          version: 10
 
       - name: Instalar Dependências
         run: pnpm install
@@ -41,5 +44,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/public
-          cname: gustavo0121.github.io
+          publish_dir: ./dist
+          force_orphan: true
