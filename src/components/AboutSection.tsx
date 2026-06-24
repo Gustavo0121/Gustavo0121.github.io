@@ -2,14 +2,14 @@
  * AboutSection — Obsidian Engineering Design
  * Two-column layout: text left, abstract visual right
  */
-import { Shield, Zap, Code2, Database } from "lucide-react";
+import { Shield, Zap, AppWindow, FileCodeIcon } from "lucide-react";
 
 const ABOUT_IMG =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663654036227/SioH9CfgzqLRavGjJxXhoY/about-visual-5AY5cLC4wd25FawvbXzM2J.webp";
 
 const highlights = [
   {
-    icon: Code2,
+    icon: AppWindow,
     label: "Back-End",
     desc: "Python, Java, APIs REST e integração de sistemas",
   },
@@ -19,9 +19,9 @@ const highlights = [
     desc: "Vault, rate limiting, mitigação de DDoS",
   },
   {
-    icon: Database,
-    label: "Performance",
-    desc: "Otimização SQL com redução de 90% em queries",
+    icon: FileCodeIcon,
+    label: "Frontend",
+    desc: "Angular, Ux/UI, integração com APIs e microserviços",
   },
   {
     icon: Zap,
@@ -82,8 +82,8 @@ export default function AboutSection() {
                 className="text-base leading-relaxed"
                 style={{ color: "#9CA3AF" }}
               >
-                Sou desenvolvedor back-end com experiência em ambientes de alta
-                criticidade — incluindo órgãos governamentais como a{" "}
+                Sou desenvolvedor Full Stack com experiência em ambientes de alta
+                criticidade, incluindo órgãos governamentais como a{" "}
                 <strong style={{ color: "#F9FAFB" }}>
                   Presidência da República
                 </strong>{" "}
@@ -99,8 +99,8 @@ export default function AboutSection() {
               >
                 Meu foco está em construir sistemas robustos, seguros e
                 performáticos. Trabalho com automação inteligente, otimização de
-                banco de dados, segurança de aplicações e integração de sistemas
-                — sempre com atenção à qualidade do código e ao impacto real das
+                banco de dados, segurança de aplicações e integração de sistemas,
+                sempre com atenção à qualidade do código e ao impacto real das
                 soluções.
               </p>
               <p
@@ -211,7 +211,7 @@ export default function AboutSection() {
                   className="text-2xl font-bold"
                   style={{ color: "#F9FAFB", fontFamily: "Sora, sans-serif" }}
                 >
-                  2+
+                  3+
                 </p>
                 <p className="text-xs" style={{ color: "#9CA3AF" }}>
                   anos de experiência

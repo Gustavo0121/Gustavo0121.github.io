@@ -95,7 +95,7 @@ export default function ResumeSection() {
                   Gustavo Ribeiro — CV
                 </h3>
                 <p className="text-sm mb-3" style={{ color: "#9CA3AF" }}>
-                  Back-End Developer | Automação | Segurança | Performance
+                  Full Stack Developer | Automação | Segurança | Performance
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {[

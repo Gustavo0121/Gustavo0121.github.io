@@ -4,8 +4,7 @@
  */
 
 const stats = [
-  { value: "2+", label: "Anos de experiência" },
-  { value: "90%", label: "Redução em queries SQL" },
+  { value: "3+", label: "Anos de experiência" },
   { value: "2", label: "Órgãos governamentais" },
   { value: "10+", label: "Tecnologias dominadas" },
   { value: "∞", label: "Linhas de código" },

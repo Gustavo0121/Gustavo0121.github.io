@@ -6,11 +6,11 @@ import { useEffect, useRef, useState } from "react";
 
 const skills = [
   { name: "Back-End Development", level: 90, color: "#38BDF8" },
-  { name: "Segurança de Aplicações", level: 85, color: "#818CF8" },
-  { name: "SQL & Performance", level: 92, color: "#34D399" },
+  { name: "Segurança de Aplicações", level: 92, color: "#818CF8" },
+  { name: "SQL & Performance", level: 80, color: "#34D399" },
   { name: "Automação & Scripts", level: 88, color: "#FBBF24" },
   { name: "APIs & Integrações", level: 85, color: "#38BDF8" },
-  { name: "Performance Optimization", level: 87, color: "#F472B6" },
+  { name: "Front-end Development", level: 87, color: "#F472B6" },
   { name: "Clean Code", level: 83, color: "#818CF8" },
   { name: "Problem Solving", level: 95, color: "#34D399" },
 ];
@@ -207,10 +207,10 @@ export default function SkillsSection() {
               style={{ transitionDelay: "160ms" }}
             >
               {[
-                { value: "2+", label: "Anos de experiência" },
-                { value: "90%", label: "Redução em queries SQL" },
+                { value: "3+", label: "Anos de experiência" },
+                { value: "Springboot, Django", label: "Frameworks para construção de APIs" },
                 { value: "Gov", label: "Setor de atuação" },
-                { value: "5+", label: "Tecnologias dominadas" },
+                { value: "Angular, React", label: "Frameworks para desenvolvimento web" },
               ].map((stat) => (
                 <div
                   key={stat.label}

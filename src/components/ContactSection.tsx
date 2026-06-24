@@ -8,8 +8,8 @@ const contacts = [
   {
     icon: Mail,
     label: "Email",
-    value: "gustavo@email.com",
-    href: "mailto:gustavo@email.com",
+    value: "gus0512san@gmail.com",
+    href: "mailto:gus0512san@gmail.com",
     color: "#38BDF8",
     desc: "Resposta em até 24h",
   },
@@ -24,8 +24,8 @@ const contacts = [
   {
     icon: Github,
     label: "GitHub",
-    value: "github.com/gustavoribeirodev",
-    href: "https://github.com/gustavoribeirodev",
+    value: "github.com/Gustavo0121",
+    href: "https://github.com/Gustavo0121",
     color: "#34D399",
     desc: "Veja meus repositórios",
   },

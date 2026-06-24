@@ -44,7 +44,7 @@ export default function Footer() {
                 fontFamily: "JetBrains Mono, monospace",
               }}
             >
-              Back-End Developer · Automação · Segurança
+              Full Stack Developer · Automação · Segurança
             </p>
           </div>
 
@@ -53,7 +53,7 @@ export default function Footer() {
             {[
               {
                 icon: Github,
-                href: "https://github.com/gustavoribeirodev",
+                href: "https://github.com/Gustavo0121",
                 label: "GitHub",
               },
               {
@@ -63,7 +63,7 @@ export default function Footer() {
               },
               {
                 icon: Mail,
-                href: "mailto:gustavo@email.com",
+                href: "mailto:gus0512san@gmail.com",
                 label: "Email",
               },
             ].map(({ icon: Icon, href, label }) => (

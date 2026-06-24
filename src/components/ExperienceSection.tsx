@@ -6,7 +6,7 @@
 const experiences = [
   {
     company: "Caixa Econômica Federal",
-    role: "Desenvolvedor Back-End / Segurança e Performance",
+    role: "Desenvolvedor Full Stack / Segurança e Performance (Estágio)",
     period: "Out/2025 — Atual",
     current: true,
     description:
@@ -23,7 +23,7 @@ const experiences = [
   },
   {
     company: "Presidência da República",
-    role: "Desenvolvedor Back-End",
+    role: "Desenvolvedor de sistemas e automação (Estágio)",
     period: "Set/2023 — Set/2025",
     current: false,
     description:

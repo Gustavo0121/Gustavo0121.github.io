@@ -2,48 +2,56 @@
  * ProjectsSection — Obsidian Engineering Design
  * Project cards with tags, hover animations, and CTA links
  */
-import { ExternalLink, Github, Terminal, Smartphone, Cpu, Database } from "lucide-react";
+import { ExternalLink, Github, Terminal, QrCode, Keyboard, View } from "lucide-react";
 
 const projects = [
   {
     id: 1,
     icon: Terminal,
-    title: "Sistema GUI em Python",
+    title: "Learn Morse Code",
     description:
-      "Ferramenta interna para coleta, consolidação e visualização de atos normativos publicados no Diário Oficial da União. Interface gráfica intuitiva com automação de busca e exportação de dados.",
-    tags: ["Python", "Tkinter", "Automação", "DOU", "Data Mining"],
+      "O Learn Morse Code é uma aplicação web educacional voltada para o aprendizado, prática e aperfeiçoamento do código morse.",
+    tags: ["Python", "Django", "Angular", "REST API", "PostgreSQL"],
     color: "#38BDF8",
     featured: true,
+    github: 'https://github.com/Gustavo0121/learn-morse-code-frontend',
+    docs: '#',
   },
   {
     id: 2,
-    icon: Smartphone,
-    title: "Aplicativo Mobile",
+    icon: View,
+    title: "FINDCPF",
     description:
-      "Aplicativo para consulta e acompanhamento de atos normativos publicados no DOU. Permite busca por palavras-chave, filtros por data e categoria, com notificações de novas publicações.",
-    tags: ["Mobile", "Python", "REST API", "Plone", "UX"],
+      "O FINDCPF é uma aplicação web para consulta e validação de números de CPF, foi desenvolvido a partir de um estudo sobre OSINT, é um projeto pessoal e para fins educativos, sem nenhum propósito comercial ou para benefício próprio.",
+    tags: ["FASTAPI", "Python", "Angular", "OSINT"],
     color: "#818CF8",
-    featured: false,
+    featured: true,
+    github: 'https://github.com/Gustavo0121/find-cpf-frontend',
+    docs: '#',
   },
   {
     id: 3,
-    icon: Cpu,
-    title: "Automação de Processos",
+    icon: QrCode,
+    title: "QR Code",
     description:
-      "Suite de scripts e ferramentas para otimização de tarefas administrativas repetitivas. Inclui automação de relatórios, integração com sistemas legados e IA aplicada para classificação de documentos.",
-    tags: ["Python", "IA", "Scripts", "Integração", "Docker"],
+      "O QR Code é um sistema GUI feito com o framework Flet, ele permite a leitura e a geração de códigos QR personalizados de forma simples e eficiente.",
+    tags: ["Python", "Flet", "GUI Interface"],
     color: "#34D399",
     featured: false,
+    github: 'https://github.com/Gustavo0121/qr-code',
+    docs: '#',
   },
   {
     id: 4,
-    icon: Database,
-    title: "Otimização SQL",
+    icon: Keyboard,
+    title: "Typing Test",
     description:
-      "Projeto de melhoria de performance em banco de dados SQL Server. Análise de execution plans, reescrita de queries complexas, criação de índices estratégicos e redução de 90% no tempo de resposta.",
-    tags: ["SQL Server", "Performance", "Java", "Vault", "Segurança"],
+      "O Typing Test é um sistema GUI feito com o framework Flet, ele permite a prática e o aprimoramento da digitação com velocidade e precisão.",
+    tags: ["Python", "Flet", "GUI Interface"],
     color: "#FBBF24",
-    featured: true,
+    featured: false,
+    github: 'https://github.com/Gustavo0121/typing-test',
+    docs: 'https://drive.google.com/drive/folders/1dPQk-8pNkK6yiJjFtP6Rgawihpi4RsA9?usp=sharing',
   },
 ];
 
@@ -117,7 +125,7 @@ export default function ProjectsSection() {
                       fontFamily: "JetBrains Mono, monospace",
                     }}
                   >
-                    destaque
+                    DESTAQUE
                   </div>
                 )}
 
@@ -175,7 +183,7 @@ export default function ProjectsSection() {
                   style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}
                 >
                   <a
-                    href="https://github.com/gustavoribeirodev"
+                    href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-xs font-medium transition-colors duration-200"
@@ -192,7 +200,9 @@ export default function ProjectsSection() {
                     Código
                   </a>
                   <a
-                    href="#"
+                    href={project.docs}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-xs font-medium transition-colors duration-200"
                     style={{ color: "#6B7280" }}
                     onMouseEnter={(e) =>

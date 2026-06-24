@@ -47,7 +47,7 @@ const stackCategories = [
       { name: "Automação", icon: "🤖" },
       { name: "Segurança", icon: "🛡️" },
       { name: "Data Mining", icon: "⛏️" },
-      { name: "Mobile Dev", icon: "📱" },
+      { name: "Sistemas GUI", icon: "💻" },
     ],
   },
 ];

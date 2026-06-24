@@ -9,7 +9,7 @@ const HERO_BG =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663654036227/SioH9CfgzqLRavGjJxXhoY/hero-bg-YNpHRJwYYa56GXTYP28iZH.webp";
 
 const roles = [
-  "Back-End Developer",
+  "Full Stack Developer",
   "Automação & Scripts",
   "Segurança de Aplicações",
   "Performance & SQL",
@@ -263,7 +263,7 @@ export default function HeroSection() {
               transitionDelay: "300ms",
             }}
           >
-            Desenvolvedor focado em backend, automação inteligente, segurança de
+            Desenvolvedor Full Stack com foco em backend, automação inteligente, segurança de
             aplicações e otimização de sistemas. Experiência em órgãos
             governamentais e setor financeiro.
           </p>
@@ -274,7 +274,7 @@ export default function HeroSection() {
             style={{ transitionDelay: "400ms" }}
           >
             <a
-              href="https://github.com/gustavoribeirodev"
+              href="https://github.com/Gustavo0121"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-md text-sm font-medium btn-glow transition-all duration-200"
