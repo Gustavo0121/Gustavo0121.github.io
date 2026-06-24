@@ -1,0 +1,45 @@
+name: Deploy para GitHub Pages
+
+on:
+  push:
+    branches: [ "dev" ] 
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  build_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+    
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'pnpm'
+
+      - name: Instalar pnpm
+        uses: pnpm/action-setup@v2 # Instala a versão correta do pnpm especificada no package.json
+        with:
+          version: 10
+
+      - name: Instalar Dependências
+        run: pnpm install
+
+      - name: Build do Projeto
+        run: pnpm build # O comando de build varia de acordo com seu framework (ex: pnpm run build-static)
+
+      - name: Deploy para GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist/public
+          cname: gustavo0121.github.io
