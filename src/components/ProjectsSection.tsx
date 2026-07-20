@@ -15,7 +15,7 @@ const projects = [
     color: "#38BDF8",
     featured: true,
     github: 'https://github.com/Gustavo0121/learn-morse-code-frontend',
-    docs: '#',
+    docs: 'https://learnmorsecode.com.br',
   },
   {
     id: 2,
@@ -39,7 +39,7 @@ const projects = [
     color: "#34D399",
     featured: false,
     github: 'https://github.com/Gustavo0121/qr-code',
-    docs: '#',
+    docs: 'https://drive.google.com/drive/folders/1JoZm3JauF941yBVT89fJ2WeEsJns4Q2k?usp=sharing',
   },
   {
     id: 4,
